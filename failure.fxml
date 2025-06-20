@@ -43,7 +43,7 @@
          </Button>
          <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="353.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
             <image>
-               <Image url="@Animal/sad%20inverted.png" />
+               <Image url="@Result/sad%20inverted.png" />
             </image>
          </ImageView>
       </children></AnchorPane>

@@ -63,6 +63,7 @@ public class CompleteController {
         if (backgroundMusic != null) {
             backgroundMusic.stop();
         }
+        System.exit(0);
     }
 
     @FXML
@@ -104,13 +105,32 @@ public class CompleteController {
             if (backgroundMusic != null) {
                 backgroundMusic.stop();
             }
-            String fxml = "Level1Animal.fxml"; // default
-            if ("car".equals(UserChoice.category)) {
-                fxml = "Level1Car.fxml";
-            } else if ("fruit".equals(UserChoice.category)) {
-                fxml = "Level1Fruit.fxml";
+            String fxml = "";
+            if (UserChoice.category == "animal") {
+                if (UserChoice.level == 1) {
+                    fxml = "Level1Animal.fxml";
+                } else if (UserChoice.level == 2) {
+                    fxml = "Level2Animal.fxml";
+                } else if (UserChoice.level == 3) {
+                    fxml = "Level3Animal.fxml";
+                }
+            } else if (UserChoice.category == "car") {
+                if (UserChoice.level == 1) {
+                    fxml = "Level1Car.fxml";
+                } else if (UserChoice.level == 2) {
+                    fxml = "Level2Car.fxml";
+                } else if (UserChoice.level == 3) {
+                    fxml = "Level3Car.fxml";
+                }
+            } else if (UserChoice.category == "fruit") {
+                if (UserChoice.level == 1) {
+                    fxml = "Level1Fruit.fxml";
+                } else if (UserChoice.level == 2) {
+                    fxml = "Level2Fruit.fxml";
+                } else if (UserChoice.level == 3) {
+                    fxml = "Level3Fruit.fxml";
+                }
             }
-            
             
             Scene scene = new FXMLLoader(getClass().getResource(fxml)).load();
             Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();

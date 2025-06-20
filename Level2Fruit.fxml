@@ -14,6 +14,11 @@
 <Scene xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Level2FruitController">
     <AnchorPane prefHeight="801.0" prefWidth="871.0">
       <children>
+         <ImageView fitHeight="804.0" fitWidth="886.0" layoutX="-15.0" pickOnBounds="true">
+            <image>
+               <Image url="@istockphoto-1010501332-612x612.jpg" />
+            </image>
+         </ImageView>
          <GridPane layoutX="56.0" layoutY="103.0" prefHeight="619.0" prefWidth="752.0">
             <columnConstraints>
                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -29,15 +34,15 @@
                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-               <Button fx:id="button_02" mnemonicParsing="false" onAction="#button_02_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="1">
+               <Button fx:id="button_02" mnemonicParsing="false" onAction="#button_02_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="1">
                   <graphic>
-                     <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
+                     <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true" style="-fx-background-color: tran;">
                         <image>
                            <Image url="@Fruit/Blank.jpg" />
                         </image></ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_01" mnemonicParsing="false" onAction="#button_01_action" prefHeight="130.0" prefWidth="141.0">
+               <Button fx:id="button_01" mnemonicParsing="false" onAction="#button_01_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -46,7 +51,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_03" mnemonicParsing="false" onAction="#button_03_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="2">
+               <Button fx:id="button_03" mnemonicParsing="false" onAction="#button_03_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="2">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -55,7 +60,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_04" mnemonicParsing="false" onAction="#button_04_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="3">
+               <Button fx:id="button_04" mnemonicParsing="false" onAction="#button_04_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="3">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -64,7 +69,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_05" mnemonicParsing="false" onAction="#button_05_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="4">
+               <Button fx:id="button_05" mnemonicParsing="false" onAction="#button_05_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="4">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -73,7 +78,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_06" mnemonicParsing="false" onAction="#button_06_action" prefHeight="130.0" prefWidth="141.0" GridPane.rowIndex="1">
+               <Button fx:id="button_06" mnemonicParsing="false" onAction="#button_06_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.rowIndex="1">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -82,7 +87,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_07" mnemonicParsing="false" onAction="#button_07_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <Button fx:id="button_07" mnemonicParsing="false" onAction="#button_07_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="1" GridPane.rowIndex="1">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -91,7 +96,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_09" mnemonicParsing="false" onAction="#button_09_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <Button fx:id="button_09" mnemonicParsing="false" onAction="#button_09_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="3" GridPane.rowIndex="1">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -100,7 +105,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_08" mnemonicParsing="false" onAction="#button_08_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <Button fx:id="button_08" mnemonicParsing="false" onAction="#button_08_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="2" GridPane.rowIndex="1">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -109,7 +114,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_10" mnemonicParsing="false" onAction="#button_10_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <Button fx:id="button_10" mnemonicParsing="false" onAction="#button_10_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="4" GridPane.rowIndex="1">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -118,7 +123,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_11" mnemonicParsing="false" onAction="#button_11_action" prefHeight="130.0" prefWidth="141.0" GridPane.rowIndex="2">
+               <Button fx:id="button_11" mnemonicParsing="false" onAction="#button_11_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.rowIndex="2">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -127,7 +132,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_12" mnemonicParsing="false" onAction="#button_12_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <Button fx:id="button_12" mnemonicParsing="false" onAction="#button_12_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="1" GridPane.rowIndex="2">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true">
                         <image>
@@ -136,7 +141,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_13" mnemonicParsing="false" onAction="#button_13_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <Button fx:id="button_13" mnemonicParsing="false" onAction="#button_13_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="2" GridPane.rowIndex="2">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
                         <image>
@@ -145,7 +150,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_14" mnemonicParsing="false" onAction="#button_14_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <Button fx:id="button_14" mnemonicParsing="false" onAction="#button_14_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="3" GridPane.rowIndex="2">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
                         <image>
@@ -154,7 +159,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_15" mnemonicParsing="false" onAction="#button_15_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <Button fx:id="button_15" mnemonicParsing="false" onAction="#button_15_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="4" GridPane.rowIndex="2">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
                         <image>
@@ -163,7 +168,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_16" mnemonicParsing="false" onAction="#button_16_action" prefHeight="130.0" prefWidth="141.0" GridPane.rowIndex="3">
+               <Button fx:id="button_16" mnemonicParsing="false" onAction="#button_16_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.rowIndex="3">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
                         <image>
@@ -172,7 +177,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_17" mnemonicParsing="false" onAction="#button_17_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <Button fx:id="button_17" mnemonicParsing="false" onAction="#button_17_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="1" GridPane.rowIndex="3">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
                         <image>
@@ -181,7 +186,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_18" mnemonicParsing="false" onAction="#button_18_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <Button fx:id="button_18" mnemonicParsing="false" onAction="#button_18_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="2" GridPane.rowIndex="3">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
                         <image>
@@ -190,7 +195,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_19" mnemonicParsing="false" onAction="#button_19_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <Button fx:id="button_19" mnemonicParsing="false" onAction="#button_19_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="3" GridPane.rowIndex="3">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
                         <image>
@@ -199,7 +204,7 @@
                      </ImageView>
                   </graphic>
                </Button>
-               <Button fx:id="button_20" mnemonicParsing="false" onAction="#button_20_action" prefHeight="130.0" prefWidth="141.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <Button fx:id="button_20" mnemonicParsing="false" onAction="#button_20_action" prefHeight="130.0" prefWidth="141.0" style="-fx-background-color: tran;" GridPane.columnIndex="4" GridPane.rowIndex="3">
                   <graphic>
                      <ImageView fitHeight="116.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
                         <image>
@@ -210,17 +215,27 @@
                </Button>
             </children>
          </GridPane>
-         <Button fx:id="button_hint" layoutX="397.0" layoutY="752.0" mnemonicParsing="false" text="Quit">
+         <Button fx:id="button_quit_F2" layoutX="396.0" layoutY="736.0" mnemonicParsing="false" onAction="#button_quit_F2_action" style="-fx-background-color: tran;" text="Quit" textFill="#00aad5">
             <font>
-               <Font name="Bauhaus 93" size="15.0" />
+               <Font name="Bauhaus 93" size="24.0" />
             </font></Button>
-         <Label layoutX="56.0" layoutY="39.0" text="Time:">
+         <Label layoutX="33.0" layoutY="21.0" text="Time:" textFill="#00aad5">
             <font>
-               <Font name="Bauhaus 93" size="15.0" />
+               <Font name="Bauhaus 93" size="18.0" />
             </font></Label>
-         <Label fx:id="label_time" layoutX="104.0" layoutY="41.0" text="45s">
+         <Label fx:id="label_time" layoutX="89.0" layoutY="22.0" text="45s" textFill="RED">
             <font>
-               <Font name="Bauhaus 93" size="15.0" />
+               <Font name="Bauhaus 93" size="18.0" />
             </font></Label>
+         <ImageView fx:id="Imageview_soundOFF_F2" fitHeight="40.0" fitWidth="40.0" layoutX="772.0" layoutY="12.0" onMouseClicked="#Imageview_soundOFF_F2_action" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+               <Image url="@photo_2025-06-18_00-12-51.png" />
+            </image>
+         </ImageView>
+         <ImageView fx:id="Imageview_soundON_F2" fitHeight="40.0" fitWidth="40.0" layoutX="772.0" layoutY="12.0" onMouseClicked="#Imageview_soundON_F2_action" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@photo_2025-06-18_00-13-31.png" />
+            </image>
+         </ImageView>
       </children></AnchorPane>
 </Scene>

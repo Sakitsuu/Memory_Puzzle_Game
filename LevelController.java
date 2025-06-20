@@ -77,14 +77,14 @@ public class LevelController {
                 fxmlToLoad = "Level2Animal.fxml";
                 title = "Memory Puzzle Game - Level 2 Animal";
             } else if (UserChoice.category.equals("fruit")) {
-                fxmlToLoad = "Level1Fruit.fxml";
+                fxmlToLoad = "Level2Fruit.fxml";
                 title = "Memory Puzzle Game - Level 2 Fruit";
             } else if (UserChoice.category.equals("car")) {
-                fxmlToLoad = "Level1Car.fxml";
+                fxmlToLoad = "Level2Car.fxml";
                 title = "Memory Puzzle Game - Level 2 Car";
             } else {
                 // Default or error handling
-                fxmlToLoad = "Level_1.fxml";
+                fxmlToLoad = "Level_2.fxml";
                 title = "Memory Puzzle Game - Level 2";
             }
 
@@ -110,14 +110,14 @@ public class LevelController {
                 fxmlToLoad = "Level3Animal.fxml";
                 title = "Memory Puzzle Game - Level 3 Animal";
             } else if (UserChoice.category.equals("fruit")) {
-                fxmlToLoad = "Level1Fruit.fxml";
+                fxmlToLoad = "Level3Fruit.fxml";
                 title = "Memory Puzzle Game - Level 3 Fruit";
             } else if (UserChoice.category.equals("car")) {
-                fxmlToLoad = "Level1Car.fxml";
+                fxmlToLoad = "Level3Car.fxml";
                 title = "Memory Puzzle Game - Level 3 Car";
             } else {
                 // Default or error handling
-                fxmlToLoad = "Level_1.fxml";
+                fxmlToLoad = "Level_3.fxml";
                 title = "Memory Puzzle Game - Level 3";
             }
 

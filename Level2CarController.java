@@ -16,6 +16,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import javafx.stage.Stage;
 
 public class Level2CarController {
@@ -81,10 +84,16 @@ public class Level2CarController {
     private Button button_20;
 
     @FXML
-    private Button button_hint;
+    private Button button_quit_C2;
 
     @FXML
     private Label label_time;
+
+    @FXML 
+    private ImageView Imageview_soundON_C2;
+
+    @FXML
+    private ImageView Imageview_soundOFF_C2;
 
     private List<Button> buttons;
     private List<Image> images; // Shuffled images for the game
@@ -99,6 +108,9 @@ public class Level2CarController {
     private Timer gameTimer;
     private int timeLeft = 45;
     private int matchedPairs = 0;
+
+    private MediaPlayer backgroundMusic;
+    private boolean isMusicPlaying = true;
 
     public void initialize() {
         buttons = Arrays.asList(
@@ -144,6 +156,7 @@ public class Level2CarController {
         }
 
         startTimer();
+        playBackgroundMusic();
     }
 
     private void setImageOnButton(Button btn, Image img) {
@@ -216,6 +229,8 @@ public class Level2CarController {
                         btn.setDisable(true);
                     }
                     gameTimer.cancel();
+                    backgroundMusic.pause();
+                    isMusicPlaying = false;
 
                     try{
                         Scene scene = FXMLLoader.load(getClass().getResource("failure.fxml"));
@@ -231,11 +246,26 @@ public class Level2CarController {
         }
     }, 1000, 1000);
 }
+
+    private void playBackgroundMusic() {
+        try {
+            Media media = new Media(getClass().getResource("/Sound/FIFTY FIFTY - Cupid (Twin Version) (Lyrics) 1080p_20250619160432.mp3").toURI().toString());
+            backgroundMusic = new MediaPlayer(media);
+            backgroundMusic.setCycleCount(MediaPlayer.INDEFINITE);
+            backgroundMusic.play();
+            isMusicPlaying = true;
+        } catch (Exception e) {
+            System.err.println("Failed to load background music.");
+            e.printStackTrace();
+        }
+    }
     
     private void showCompleteScene(){
         try {
             if(gameTimer != null) {
                 gameTimer.cancel();
+                backgroundMusic.pause();
+                isMusicPlaying = false;
             }
         FXMLLoader loader = new FXMLLoader(getClass().getResource("Complete.fxml"));
         Scene scene = loader.load();
@@ -262,7 +292,7 @@ public class Level2CarController {
 
     @FXML
     void button_02_action(ActionEvent event) {
-
+        handleButtonClick(button_02);
     }
 
     @FXML
@@ -357,4 +387,44 @@ public class Level2CarController {
         handleButtonClick(button_20);
     }
 
+    @FXML
+    void button_quit_C2_action(ActionEvent event) {
+        try {
+            if (backgroundMusic != null) {
+                backgroundMusic.stop();
+            }
+            Stage stage = (Stage) button_quit_C2.getScene().getWindow();
+            Scene scene = FXMLLoader.load(getClass().getResource("PlayView.fxml"));
+            stage.setScene(scene);
+            stage.setTitle("Memory Puzzle Game - Play");
+            stage.getIcons().add(new Image(getClass().getResourceAsStream("Puzzle Memory Gaming Logo.png")));
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    @FXML
+    void Imageview_soundON_C2_action(MouseEvent event) {
+        Imageview_soundON_C2.setVisible(false);
+        Imageview_soundOFF_C2.setVisible(true);
+
+    // Pause music
+        if (backgroundMusic != null) {
+            backgroundMusic.pause();
+            isMusicPlaying = false;
+        }
+    }
+
+    @FXML
+    void Imageview_soundOFF_C2_action(MouseEvent event) {
+        Imageview_soundON_C2.setVisible(true);
+        Imageview_soundOFF_C2.setVisible(false);
+
+    // Resume music
+        if (backgroundMusic != null) {
+            backgroundMusic.play();
+            isMusicPlaying = true;
+        }
+    }
 }
